@@ -138,25 +138,24 @@ h2 {
 .info {
   width: 23vw;
   height: 10vh;
+  display: flex;
+  justify-content: space-around;
   border-radius: 10px;
   background: #F6F8FF;
-  color: #4B6A9B;
   font-size: 0.8rem;
   font-family: "Space Mono", monospace;
 }
 
-.info1, .info2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+h3 {
   color: #4B6A9B;
-  font-size: 1rem;
-  font-family: "Space Mono", monospace;
+  margin-bottom: 0px;
+  font-weight: normal;
 }
 
-.info2 h2 {
-  margin-top: -10px;
-  margin-right: 40px;
+h4 {
+  color: #2B3442;
+  margin-top: 0px;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
