@@ -158,4 +158,51 @@ h4 {
   font-size: 1.5rem;
 }
 
+.reseaux, .reseaux2 {
+  display: flex;
+  color: #4B6A9B;
+  font-family: "Space Mono", monospace;
+}
+
+.reseaux .reseaux2, p {
+  font-size: 0.9rem;
+}
+
+.reseaux .reseaux2, i {
+  font-size: 1.2rem;
+}
+
+.reseaux {
+  margin-top: 30px;
+}
+
+.reseaux2, p, i {
+  margin-top: 5px;
+}
+
+.localisation .twitter, p {
+  margin-left: 20px;
+}
+
+.twitter {
+  margin-left: 150px;
+}
+
+.twitter {
+  color: #8c98ac;
+}
+
+.localisation, .twitter {
+  display: flex;
+  align-items: center;
+}
+
+.link, .link2 {
+  display: flex;
+}
+
+.link2 {
+  margin-left: 25px;
+}
+
 /*# sourceMappingURL=style.css.map */
