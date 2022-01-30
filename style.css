@@ -46,7 +46,7 @@ h1 {
 }
 
 input[type=text] {
-  width: 20vw;
+  width: 72%;
   margin-left: 20px;
   font-family: "Space Mono", monospace;
   border: none;
@@ -59,7 +59,6 @@ button {
   height: 50px;
   color: white;
   background: #0079FF;
-  margin-left: 100px;
   border-radius: 10px;
   border: none;
   font-family: "Space Mono", monospace;
@@ -86,22 +85,22 @@ button {
 }
 
 .photo {
-  width: 18vw;
-  height: 12vh;
+  width: 20%;
+  height: 30%;
   margin-left: 45px;
   margin-top: 50px;
 }
 
 .textprincipal {
-  width: 30vw;
-  height: 50vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .hhh {
-  width: 25vw;
-  height: 10vh;
+  width: 100%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,6 +110,7 @@ button {
 
 h2 {
   margin-bottom: 0px;
+  margin-left: 30px;
 }
 
 .date {
@@ -119,12 +119,14 @@ h2 {
   margin-left: auto;
   margin-right: 40px;
   margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 .at {
   font-family: "Space Mono", monospace;
   color: #0079FF;
-  margin-top: -20px;
+  margin-top: -15px;
+  margin-left: 30px;
 }
 
 .bio {
@@ -133,17 +135,19 @@ h2 {
   font-family: "Space Mono", monospace;
   margin-top: 30px;
   margin-bottom: 35px;
+  margin-left: 30px;
 }
 
 .info {
-  width: 23vw;
-  height: 10vh;
+  width: 85%;
+  height: 20%;
   display: flex;
   justify-content: space-around;
   border-radius: 10px;
   background: #F6F8FF;
   font-size: 0.8rem;
   font-family: "Space Mono", monospace;
+  margin-left: 30px;
 }
 
 h3 {
@@ -164,9 +168,12 @@ h4 {
 }
 
 .reseaux, .reseaux2 {
+  width: 85%;
+  height: 10%;
   display: flex;
   color: #4B6A9B;
   font-family: "Space Mono", monospace;
+  margin-left: 30px;
 }
 
 .reseaux .reseaux2, p {
@@ -207,6 +214,12 @@ h4 {
 
 .link2 {
   margin-left: 25px;
+}
+
+@media (max-width: 1250px) {
+  main .info {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
