@@ -1,8 +1,23 @@
-@media(maxwidth: 850px) {}
-
-@media(max-width: 1250px) {
-
-    main {
-        .info {display: block;}
+@media (max-width: 1500px){
+    main{
+        width: 50%;
     }
 }
+
+
+@media(maxwidth: 1050px ) {
+    
+    .textprincipal{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+
+
+@media(max-width: 800px) {
+
+
+
+}
+}
+

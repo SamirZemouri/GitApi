@@ -1,15 +1,45 @@
+body.dark-mode {
+  background-color: #141D2F;
+  color: #F6F8FF;
+}
+body.dark-mode .github, body.dark-mode .search, body.dark-mode input[type=text] {
+  background-color: #1E2A47;
+  color: #F6F8FF;
+}
+body.dark-mode .info {
+  background-color: #141D2F;
+  color: #F6F8FF;
+}
+body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode p, body.dark-mode .fa-moon {
+  color: #F6F8FF;
+}
+
+body.light-mode {
+  background-color: #F6F8FF;
+  color: #2B3442;
+}
+body.light-mode .github, body.light-mode .search, body.light-mode input {
+  background-color: #FEFEFE;
+  color: #2B3442;
+}
+body.light-mode .info {
+  background-color: #F6F8FF;
+  color: #2B3442;
+}
+
 body {
   background: #F6F8FF;
   display: flex;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
 }
 
 main {
+  width: 35%;
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
 }
 
 h1 {
@@ -21,19 +51,21 @@ h1 {
 
 .github {
   display: flex;
-  width: 35vw;
+  width: 100%;
   height: 45vh;
+  max-width: 1000px;
   background: #FEFEFE;
   border-radius: 18px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.17);
   margin-top: 25px;
+  margin: 25px auto 0 auto;
 }
 
 .search {
   display: flex;
   align-items: center;
-  width: 35vw;
-  height: 7vh;
+  width: 100%;
+  height: 60px;
   background: #FEFEFE;
   border-radius: 18px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.17);
@@ -43,6 +75,11 @@ h1 {
   font-size: 1.5rem;
   color: #0079FF;
   margin-left: 30px;
+  margin-top: 0px;
+}
+
+.fa-moon {
+  cursor: pointer;
 }
 
 input[type=text] {
@@ -51,12 +88,13 @@ input[type=text] {
   font-family: "Space Mono", monospace;
   border: none;
   outline: none;
+  background-color: transparent;
   caret-color: #0079FF;
 }
 
 button {
-  width: 100px;
-  height: 50px;
+  width: 15%;
+  height: 80%;
   color: white;
   background: #0079FF;
   border-radius: 10px;
@@ -216,9 +254,15 @@ h4 {
   margin-left: 25px;
 }
 
-@media (max-width: 1250px) {
-  main .info {
-    display: block;
+@media (max-width: 1500px) {
+  main {
+    width: 50%;
+  }
+}
+@media (maxwidth: 1050px) {
+  .textprincipal {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

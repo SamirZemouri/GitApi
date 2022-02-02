@@ -1,16 +1,44 @@
 @import './variables.scss'
+
+
+
+body.dark-mode
+    background-color: $fond-sombre
+    color: $light-color
+    .github, .search, input[type="text"]
+        background-color: $fond-git-sombre
+        color: $light-color
+    .info
+        background-color: $fond-sombre
+        color: $light-color
+    h2, h3, h4, p, .fa-moon
+        color: $light-color
+
+
+body.light-mode
+    background-color: $light-color
+    color: $dark-color
+    .github, .search, input
+        background-color: $fond-git-clair
+        color: $dark-color
+    .info
+        background-color: $light-color
+        color: $dark-color
+
     
 body
-    background: $fond-clair
+    background: $light-color
     display: flex
     justify-content: center
-    width: 100vw
-    height: 100vh
+    align-items: center
+    width: 100%
+    height: 80vh
 
 main
+    width: 35%
     display: flex
     flex-direction: column
-    margin-top: 120px
+
 h1
     display: flex
     flex: start
@@ -22,18 +50,20 @@ h1
 
 .github 
     display: flex
-    width: 35vw
+    width: 100%
     height: 45vh
+    max-width: 1000px
     background: $fond-git-clair
     border-radius: $radius
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.17)
     margin-top: 25px
+    margin: 25px auto 0 auto
 
 .search 
     display: flex
     align-items: center
-    width: 35vw
-    height: 7vh
+    width: 100%
+    height: 60px
     background: $fond-git-clair
     border-radius: $radius
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.17)
@@ -42,6 +72,10 @@ h1
     font-size: 1.5rem
     color: $fond-recherche
     margin-left: 30px
+    margin-top: 0px
+
+.fa-moon
+    cursor: pointer
 
 input[type="text"]
     width: 72%
@@ -49,11 +83,12 @@ input[type="text"]
     font-family:'Space Mono', monospace
     border: none
     outline: none
+    background-color: transparent
     caret-color: $fond-recherche
 
 button
-    width: 100px
-    height: 50px
+    width: 15%
+    height: 80%
     color: white
     background: $fond-recherche
     border-radius: 10px
@@ -133,7 +168,7 @@ h2
     display: flex
     justify-content: space-around
     border-radius: 10px
-    background: $fond-clair
+    background: $light-color
     font-size: 0.8rem
     font-family: 'Space Mono', monospace
     margin-left: 30px
@@ -199,4 +234,4 @@ h4
 
 
 
-@import '_media'
+@import './media'
