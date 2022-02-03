@@ -100,6 +100,11 @@ button {
   border-radius: 10px;
   border: none;
   font-family: "Space Mono", monospace;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0079FF;
 }
 
 .header {
@@ -122,11 +127,17 @@ button {
   margin-top: 8px;
 }
 
-.photo {
+#photo {
   width: 20%;
   height: 30%;
   margin-left: 45px;
   margin-top: 50px;
+}
+
+img {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 100px;
 }
 
 .textprincipal {
@@ -151,7 +162,7 @@ h2 {
   margin-left: 30px;
 }
 
-.date {
+#date {
   color: #4B6A9B;
   font-size: 0.8rem;
   margin-left: auto;
@@ -167,7 +178,7 @@ h2 {
   margin-left: 30px;
 }
 
-.bio {
+#bio {
   font-size: 0.9rem;
   color: #4B6A9B;
   font-family: "Space Mono", monospace;
@@ -252,6 +263,7 @@ h4 {
 
 .link2 {
   margin-left: 25px;
+  position: relative;
 }
 
 @media (max-width: 1500px) {
